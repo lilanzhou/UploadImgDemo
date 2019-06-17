@@ -1,0 +1,21 @@
+
+spring:
+  freemarker:
+    request-context-attribute: req
+    suffix: .ftl
+    content-type: text/html
+    enabled: true
+    cache: false
+    template-loader-path: classpath:/templates/
+    charset: UTF-8
+    settings:
+      number_format: '0.##'
+  servlet:
+    multipart:
+      resolve-lazily: false
+      max-file-size: 50MB
+      max-request-size: 50MB
+server:
+  port: 8081
+
+
